@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex template</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+        body{
+            background-color: aliceblue;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        ul{
+            list-style: none;
+        }
+
+        .header{
+            width: 100%;
+            height: 60vh;
+            position: relative;
+        }
+
+        .header .navbar{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            margin-top: 10px;
+        }
+
+        .logo img{
+            margin-left: 50px;
+            margin-right: 170px;
+        }
+
+
+        .menu ul li{
+            display: inline-block;
+            padding: 0 25px;
+            cursor: pointer;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 80px;
+            align-items: center;
+            
+        }
+
+        .login-btn{
+            display: block;
+            font-size: 19px;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 8px 30px;
+            margin-left:150px;
+            background-color: #fff;
+        }
+
+        .login-btn:hover{
+            background-color: #51f367;
+            color: #fff;
+        }
+
+        .signup-btn{
+            display: block;
+            font-size: 19px;
+            font-weight: 700;
+            cursor: pointer;
+            border-radius: 5px;
+            padding: 8px 20px;
+            margin-right: 50px;
+            background-color: #fff;
+        }
+
+        .signup-btn:hover{
+            background-color: #51f367;
+            color: #fff;
+
+        }
+
+        .banner{
+            width: 80%;
+            height: 70%;
+            position: absolute;
+            top: 33%;
+            left: 90px;
+        
+        }
+
+        .app-text{
+            width: 50%;
+            float: left;
+            padding-left: 50px;
+            
+        }
+
+        .hd{
+            margin-top: 960px;
+            font-size: 12px;
+            color: #fff;
+            background-color:#51f367 ;
+            border-radius: 30px;
+            padding: 5px;
+            
+            
+        }
+
+        .app-text h1{
+            font-size: 67px;
+            position: relative;
+            color: #000;
+            margin-top: 30px;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .app-text p{
+            font-size: 20px;
+            margin-top: 25px;
+            letter-spacing: 1px;
+            color: #000;
+            
+            
+        }
+        .btn-group{
+            display: flex;
+            width: 100%;
+            position: relative;
+            margin-top: 18px;
+        }
+
+        .btn-group .demo-btn{
+            cursor: pointer;
+            display: block;
+            color: #000;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 13px 35px;
+        }
+
+        .demo-btn:hover{
+            background-color: #51f367;
+            color: #fff;
+        }
+
+        .btn-group .sign-btn{
+            margin-left: 20px;
+            display: inline flex;
+            color: #000;
+            text-align: center;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 5px;
+            background-color: #fff;
+            padding: 13px 35px;
+         }
+
+        .sign-btn:hover{
+            background-color: #51f367;
+            color: #fff;
+        }
+
+        h5{
+            margin-top: 60px;
+            opacity:0.7;
+        }
+        .pic{
+            margin-top: 10px;
+            width: 400px;
+        }
+        .logochart{
+           float: right;
+            margin-top: 130px;
+            height: 470px;
+        }
+        
+    </style>
+</head>
+<body>
+	<div class="header">
+     <div class="navbar">
+         <div class="logo">
+             <a href="#"><img src="../../public/image/logoR.png"></a>
+         </div>
+         <div class="menu">
+             <ul>
+                 <li>Product</li>
+                 <li>Features</li>
+                 <li>Pricing</li>
+                 <li>Resource</li>
+             </ul>
+         </div>
+         <div class="login-btn">Login</div>
+         <div class="signup-btn">Sign Up</div>
+         
+     </div>   
+
+     <div class="banner">
+         <div class="app-text">
+             <span class="hd">HEADER</span>
+             <h1>Lorem ipsum <br>dolor sit amet.</h1>
+             <p>We're different. flex is the only saas business platform that lets you run your businuss.</p>
+             <div class="btn-group">
+                <div class="demo-btn">Request a Demo</div>
+                <div class="sign-btn">Sign Up</div>
+             </div>
+             <h5>Trusted by brands all around the world</h5>
+             <img class="pic" src="../../public/image/flex logo 1.png" >
+           
+         </div>
+        
+     </div>
+     <div>
+        <img class= "logochart"src="../../public/image/flex chart.jpg" >
+     </div>
+    </div>
+    
+</body>
+</html>    
